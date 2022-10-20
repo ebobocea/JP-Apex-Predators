@@ -10,8 +10,10 @@ import SwiftUI
 struct ContentView: View {
     let apController = PredatorController()
     @State var sortAlphabectical = false
+    @State var currentFilter = "All"
     
     var body: some View {
+        apController.filterby(type: currentFilter)
         
         if sortAlphabectical{
             apController.sortByAlphabetical()
@@ -24,7 +26,7 @@ struct ContentView: View {
         return NavigationView {
             NavigationView {
                 List {
-                    ForEach(apController.apexPredators){ predator in
+                    ForEach(apController.tempApexPredators){ predator in
                         NavigationLink(destination: PredatorDetail(predator: predator) ){
                             PredatorRow(predator: predator)
                         }
@@ -35,7 +37,9 @@ struct ContentView: View {
                 .toolbar{
                     ToolbarItem(placement: .navigationBarLeading){
                         Button{
-                            sortAlphabectical.toggle()
+                            withAnimation{
+                                sortAlphabectical.toggle()
+                            }
                         } label: {
                             if sortAlphabectical {
                                 Image(systemName: "film")
@@ -44,6 +48,22 @@ struct ContentView: View {
                                 Image(systemName: "textformat")
                                 
                             }
+                        }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing){
+                        Menu{
+                            Picker("filter", selection: $currentFilter.animation()){
+                                ForEach(apController.typeFilters, id: \.self){ type in
+                                    HStack{
+                                        Text(type)
+                                        Spacer()
+                                        Image(systemName: apController.typeIcon(for: type))
+                                    }
+                                    
+                                }
+                            }
+                        }label: {
+                            Image(systemName: "slider.horizontal.3")
                         }
                     }
                 }
