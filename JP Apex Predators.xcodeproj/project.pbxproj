@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E613A22527D51F0E00EABB3B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613A22427D51F0E00EABB3B /* Test.swift */; };
 		E6260CAE27D4EB84000B0940 /* JP_Apex_PredatorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6260CAD27D4EB84000B0940 /* JP_Apex_PredatorsApp.swift */; };
 		E6260CB027D4EB84000B0940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6260CAF27D4EB84000B0940 /* ContentView.swift */; };
 		E6260CB227D4EB85000B0940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6260CB127D4EB85000B0940 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E613A22427D51F0E00EABB3B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E6260CAA27D4EB84000B0940 /* JP Apex Predators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JP Apex Predators.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6260CAD27D4EB84000B0940 /* JP_Apex_PredatorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JP_Apex_PredatorsApp.swift; sourceTree = "<group>"; };
 		E6260CAF27D4EB84000B0940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				E6260CAF27D4EB84000B0940 /* ContentView.swift */,
 				E6260CC127D4F7C5000B0940 /* PredatorRow.swift */,
 				E6260CC327D51089000B0940 /* PredatorDetail.swift */,
-				E613A22427D51F0E00EABB3B /* Test.swift */,
 				E6260CBB27D4EC92000B0940 /* jpapexpredators.json */,
 				E6260CB127D4EB85000B0940 /* Assets.xcassets */,
 				E6260CB327D4EB85000B0940 /* Preview Content */,
@@ -159,7 +156,6 @@
 				E6260CC027D4F095000B0940 /* PredatorController.swift in Sources */,
 				E6260CBE27D4EECA000B0940 /* ApexPredator.swift in Sources */,
 				E6260CB027D4EB84000B0940 /* ContentView.swift in Sources */,
-				E613A22527D51F0E00EABB3B /* Test.swift in Sources */,
 				E6260CC427D51089000B0940 /* PredatorDetail.swift in Sources */,
 				E6260CAE27D4EB84000B0940 /* JP_Apex_PredatorsApp.swift in Sources */,
 				E6260CC227D4F7C5000B0940 /* PredatorRow.swift in Sources */,

@@ -12,13 +12,17 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach<[ApexPredator], Int, Any>(apController.apexPredators){ predator in
-                    NavigationLink(destination: PredatorDetail(predator: predator)) {
-                        PredatorRow(predator: predator)                    }
+            NavigationView {
+                List {
+                    ForEach(apController.apexPredators){ predator in
+                        NavigationLink(destination: Text("Dino Details go here") ){
+                            Text(predator.name)
+                        }
+                        
+                    }
                 }
+                .navigationTitle("Apex Predators")
             }
-            .navigationTitle("Apex Predators")
         }
     }
 }
@@ -26,6 +30,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        .preferredColorScheme(.dark)
+            .preferredColorScheme(.dark)
     }
 }

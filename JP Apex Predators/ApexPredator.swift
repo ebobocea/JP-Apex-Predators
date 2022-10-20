@@ -4,8 +4,6 @@
 //
 //  Created by Elisei Bobocea on 06/03/2022.
 //
-
-import Foundation
 import SwiftUI
 
 struct ApexPredator: Codable, Identifiable {
